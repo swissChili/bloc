@@ -1,0 +1,13 @@
+{%- assign page_paths = site.pages | default: default_paths -%}
+
+<h2><a href="{{ '/' | relative_url }}"> {{ site.title | escape }} </a></h2>
+
+{%- for p in page_paths -%}
+
+  {%- if p.title -%}
+
+    <a href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+
+  {%- endif -%}
+
+{%- endfor -%}

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <main>
+      <div class="nav">
+        {% include nav.html %}
+      </div>
+      <div class="body">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include scripts.html %}
+  </body>
+</html>

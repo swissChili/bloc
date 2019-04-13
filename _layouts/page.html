@@ -1,0 +1,20 @@
+---
+layout: default 
+---
+
+<h1>{{ page.title | escape }}</h1>
+
+{%- if page.date -%}
+  <span>Published {{ page.date | date: '%b %-d, %Y' }} </span>
+
+  {%- if page.author -%}
+    <br />
+    <span> By {{ page.author }} </span>
+  {%- endif -%}
+{%- endif -%}
+
+
+
+<p>
+  {{ content }}
+</p>
