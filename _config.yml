@@ -29,5 +29,7 @@ header_pages:
 
 # Build settings
 markdown: kramdown
+# this repo
+remote_theme: swisschili/bloc
 plugins:
   - jekyll-feed
